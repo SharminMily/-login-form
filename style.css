@@ -21,6 +21,7 @@ body{
     position: relative;
     width: 100%;
     max-width: 600px;
+    margin: 0 auto;
     height: auto;
     display: flex;
     background: #fff;
@@ -123,4 +124,36 @@ body{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
+.login-from input:focus{
+    border-color: rgb(17, 152, 214);
+}
+.login-from input[type="submit"]{
+    display: inline-block;
+    margin-top: 5px;
+    color: blue;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #028fc0;
+    box-shadow: #028fc0;
+}
+.login-from input[type="submit"]:hover{
+    color: #fff;
+    box-shadow: inset 250px 0 0 0 #028fc0;
+}
+@media screen and (max-width:580px){
+    .container{
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .column-left,
+    .column-right{
+        width: 100%;
+        margin: 0;
+        clip-path: none;
+    }
+    .column-right{
+        padding: 30px;
+    }
+}
